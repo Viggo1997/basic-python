@@ -19,7 +19,7 @@ if len(password)<16 and len(password)>6:
             d=1
         elif a in"$#@":
             e=1
-    if sum(b,c,d,e)==4:
+    if b+c+d+e==4:
         is_valid=True
 
     
