@@ -3,7 +3,7 @@
 # the answer is "yes" (lower case).
 
 while "p"!="yes":
-    p=input("Do you want to stop?  ")
+    p=input("Do you want to stop? ")
     if p=="yes":
         break
     

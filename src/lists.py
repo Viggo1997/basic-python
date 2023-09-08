@@ -43,7 +43,7 @@ match sys.argv[1]:
     case "mean":
         su=0
         for p in x:
-            su+=x        
+            su+=p        
         mean = su/len(x) 
         print(mean)
 

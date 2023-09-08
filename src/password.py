@@ -14,7 +14,7 @@ if len(password)<16 and len(password)>6:
             b=1
         elif a.isupper():
             c=1
-        elif h in (0,1,2,3,4,5,6,7,8,9)==a:
+        elif a in (0,1,2,3,4,5,6,7,8,9):
             d=1
         elif a in"$#@":
             e=1

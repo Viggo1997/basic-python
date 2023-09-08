@@ -21,6 +21,11 @@ match command:
 
     case "decode":
         # Implement the decoding here
-
-        decoding = ""
+        ting=[]
+        a=x.split("0x")
+        a=a[1:len(a)]
+        for p in a:
+            e=int(p,base=16)
+            ting.append(chr(e))   
+        decoding = "".join(ting)
         print(decoding)
