@@ -41,20 +41,28 @@ if len(sys.argv) < 2:
 
 match sys.argv[1]:
     case "mean":
-        # put your solution to the first exercise here
-        mean = "mean of x"
+        su=0
+        for p in x:
+            su+=x        
+        mean = su/len(x) 
         print(mean)
 
     case "times":
-        # Put your solution to the second exercise here
         times_three = []
+        for a in x:
+            t=a*3
+            times_three.append(t)
         print_list(times_three)
 
     case "even":
-        # Put your solution to the third exercise here
         even = []
+        for a in x:
+            if a%2==0:
+                even.append(a)
         print_list(even)
 
     case _:
         print(f"Incorrect command {sys.argv[1]}.", file=sys.stderr)
         sys.exit(1)
+
+
